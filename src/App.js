@@ -34,7 +34,7 @@ export default function App() {
 
   useEffect(() => {
     fetchShips();
-  }, [list]);
+  }, []);
 
 
   useEffect(() => {
@@ -57,7 +57,7 @@ export default function App() {
       <div className="search-box">
         <input type="text" placeholder="Search Ships...." align="left"
           onChange={event => { setSearch(event.target.value) }} />
-        <i class="fa fa-search" aria-hidden="true"></i>
+        <i className="fa fa-search" aria-hidden="true"></i>
       </div>
 
       <div className="count">TOTAL COUNT : {filterData.length}</div>
